@@ -12,7 +12,7 @@ def process_wimbledon_data(data):
     champions = {}
     countries = set()
 
-    for row in data[1:]:  # Skip header
+    for row in data[1:]:  
         champion = row[2]
         country = row[1]
         champions[champion] = champions.get(champion, 0) + 1
