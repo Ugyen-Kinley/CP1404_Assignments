@@ -1,0 +1,27 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    BoxLayout:
+        orientation: 'horizontal'
+
+        Button:
+            text: 'Up'
+            on_press: app.increment()
+
+        TextInput:
+            id: input_miles
+            text: ''
+
+        Button:
+            text: 'Down'
+            on_press: app.decrement()
+
+    Button:
+        text: 'Convert'
+        on_press: app.convert()
+
+    Label:
+        text: app.result
+
+    Label:
+        text: 'Enter miles and press "Convert"'
